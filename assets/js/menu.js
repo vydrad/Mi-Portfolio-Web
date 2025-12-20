@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         if(!visible){    
         aside.classList.add('layout__aside--visible');
-        icon_bars.style.opacity = '0';
-        icon_xmark.style.opacity = '1';
-        } else {
-        aside.classList.remove('layout__aside--visible');
         icon_bars.style.opacity = '1';
         icon_xmark.style.opacity = '0';
+        } else {
+        aside.classList.remove('layout__aside--visible');
+        icon_bars.style.opacity = '0';
+        icon_xmark.style.opacity = '1';
         }
     });
 });
