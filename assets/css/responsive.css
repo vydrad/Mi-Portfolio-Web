@@ -3,10 +3,13 @@
     .layout{
        min-width: auto;
        width: 85%;
-       margin-left: 10rem;
+       margin-left: -2rem;
     }
-
+    .layout__menu{
+        right: 5px;
+    }
 }
+
 @media (max-width:1400px){
 
     .layout{
@@ -25,8 +28,9 @@
  .layout{
        min-width: auto;
        width: 87%;
-       margin-left: 3rem;
+       margin-left: -7rem;
     }
+
 
     /*ASIDE*/
     .user-info__name{
@@ -44,7 +48,7 @@
     
 }
 
-@media (max-width:1150px){
+@media (max-width:1210px){
     .user-info__name{
         font-size: 2.6rem;
     }
@@ -53,7 +57,14 @@
     }
 }
 
-
+@media (max-width:1150px){
+    .user-info__name{
+        font-size: 2.3rem;
+    }
+    .user-info__job{
+        font-size: 1.3rem;
+    }
+}
 
 /* Aca ya se empieza a deformar el aside, a partir de aca ya deberia volverse todo una linea*/
 @media (max-width:1100px){
@@ -62,8 +73,8 @@
         background-image: none;
         position: static;
         padding: 0;
-        overflow: hidden;
-        
+        height: 100%;
+        border-radius: 0;
     }
     /*Para ocultar una parte de la pagina solo displayear una parte del grid y listo xdd*/
     .layout{
@@ -74,17 +85,18 @@
         grid-template-areas: 
         'content';
         grid-template-columns: 100%;
-        border-radius: 0;
+      border-radius: 0;
     }
 
+   
 
     .layout__content{
         grid-area: content;
         flex-direction: column;
         align-items: center;
         background-color: transparent;
-        border: 0;
-
+      
+        border-radius: none;
     }
     .layout__aside{
         display: none;

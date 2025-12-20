@@ -25,14 +25,16 @@ html{
 }
 
 body{
-    padding: 7rem 0;
-    width:100%;
-    height:100%;
+    margin: 0;
+
+    display: flex;
+    align-items: center;      /* centra vertical */
+    justify-content: center;  /* centra horizontal */
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     background-color: var(--color-background);
     color: var(--color-text);
-
+    
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -41,22 +43,13 @@ h1,h2,h3,h4,h5,h6{
 
 /*ESTRUCTURA PRINCIPAL*/
 .layout{
-    position:relative;
-    
     width: 75%;
     height: 80vh;
-    min-height: 80vh;
-    margin:0 auto; /*el primer valor centra vertical y el segundo horizontalmente*/
     display: grid;
-    grid-template-areas:
-    "aside content";
+    grid-template-areas: "aside content";
     grid-template-columns: 30% 70%;
-    
-
-    /*Sombre detras del layout*/
     border-radius: 4rem;
     box-shadow: 0 0 100px -5px rgba(0,0,0,0.25);
-   
 }
 
 
@@ -70,7 +63,7 @@ h1,h2,h3,h4,h5,h6{
     grid-area: aside;
     border-radius: 4rem 0 0 4rem;
     overflow: auto;
-    overflow-x: hidden; /*evitar que se muestre todo lo que sobresalga lateralmente*/
+    /*evitar que se muestre todo lo que sobresalga lateralmente*/
 }
 .aside__user-info{
 display: flex;
@@ -79,7 +72,7 @@ align-items: center;
 text-align: center;
 
 min-height: 100%;
-min-width: 30rem;
+min-width: 28rem;
 
 background-color: var(--color-secondary);
 color:var(--color-primary)
@@ -188,7 +181,7 @@ box-shadow: 0 10px 10px rgba(0,0,0,0.22);
 
 .user-info__footer{
     position: absolute;
-    bottom: 2rem;
+    bottom: 7.8rem;
    font-size: 1.3rem;
 }
 
@@ -226,8 +219,8 @@ box-shadow: 0 10px 10px rgba(0,0,0,0.22);
 .layout__menu{
     display:block ;
     position: absolute;
-    top: 0;
-    right: -105px;
+    top: 69px;
+    right: 80px;
     min-width: 11rem;
     background-color: var(--color-transparent);
 }
