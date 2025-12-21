@@ -47,8 +47,13 @@
     }
 
     /*CURRICULUM*/
+    .certificates__container{
+        
+    }
     .certificates__certificate{
-        width: auto;
+        
+        min-width: 25rem;
+
     }
 
     
@@ -103,7 +108,7 @@
         display: block;
         position: absolute;
         top: 29%;
-        left:33%;
+        left:31%;
     }
   
 
@@ -113,6 +118,7 @@
         padding: 0;
         height: 100%;
         border-radius: 0;
+         overflow: hidden;
     }
     /*Para ocultar una parte de la pagina solo displayear una parte del grid y listo xdd*/
     .layout{
@@ -123,7 +129,8 @@
         grid-template-areas: 
         'content';
         grid-template-columns: 100%;
-      border-radius: 0;
+        border-radius: 0;
+       
     }
 
     .layout__content{
@@ -145,15 +152,18 @@
         text-align: center;
         overflow: auto;
         transition: all 300ms ease-in-out;
+        height: 100%;
     }
     
     .layout__aside--visible{
-        width: 0%;
+        width: 100%;
         margin-right: 0;
         opacity: 1;
+       
     }
     .layout__aside--hidden{
-        margin-right: -100%;
+
+       margin-right: -100%;
         opacity: 0;
     }
 
@@ -219,6 +229,10 @@
     .user-info__footer{
         position: relative;
         bottom: 1.5rem;
+    }
+
+        .certificates__certificate{
+        flex-basis: calc(50% - 1.5rem);
     }
 
 }
