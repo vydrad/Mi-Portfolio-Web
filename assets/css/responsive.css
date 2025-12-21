@@ -1,7 +1,8 @@
-@media (max-width:1600px){
+@media (max-width:1900px){
     .layout__menu-toggle{
         display: none;
     }
+
 }
 
 @media (max-width:1500px){
@@ -153,6 +154,7 @@
         overflow: auto;
         transition: all 300ms ease-in-out;
         height: 100%;
+         margin-right: -100%;
     }
     
     .layout__aside--visible{
@@ -358,7 +360,6 @@
 @media (max-width:480px){
     .layout{
      
-      
     }
 
 }

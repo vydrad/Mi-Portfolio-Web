@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     button.addEventListener('click', (event) => {
         
         let visible= document.querySelector('.layout__aside--visible');
-
+        
         if(!visible){    
         aside.classList.add('layout__aside--visible');
         aside.classList.remove('layout__aside--hidden');
